@@ -5,8 +5,12 @@ public class Vehicle {
         this.type = type;
         this.onwer = o;
     }
+    // make sure user can only instantiate Vehicle using the other constructor
     private Vehicle(){}
     public Owner getOnwer() {
         return onwer;
+    }
+    public String getType() {
+        return type;
     }
 }
